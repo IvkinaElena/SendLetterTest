@@ -1,7 +1,6 @@
 package org.example;
 
 public class Parameters {
-    public static final String chromedriver = "bin/chromedriver.exe";
     public static final String startUrl = "https://mail.yandex.ru";
     //ввеите валидные данные для логина и пароля
     public static final String login = "test";

@@ -1,5 +1,6 @@
 package org.example;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,7 +21,7 @@ public class SendLetterTest {
 
     @BeforeAll
     public void setup(){
-        System.setProperty("webdriver.chrome.driver", Parameters.chromedriver);
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         mailPage = new MailPage(driver);
         passportPage = new PassportPage(driver);
